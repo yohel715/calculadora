@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
 
 
     <TextView
@@ -15,10 +16,10 @@
         android:layout_marginTop="20dp"
         android:padding="40dp"
         android:ems="10"
-        android:inputType="text"
         android:text=""
         android:gravity="end"
         android:textSize="40dp"
+        android:textColor="@color/colorAccent"
         />
 
     <LinearLayout
@@ -38,28 +39,32 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="+" />
+                android:text="+"
+                android:onClick="onClick"/>
 
             <Button
                 android:id="@+id/btn_restar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="-" />
+                android:text="-"
+                android:onClick="onClick"/>
 
             <Button
                 android:id="@+id/btn_multiplicar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="*" />
+                android:text="*"
+                android:onClick="onClick"/>
 
             <Button
                 android:id="@+id/btn_dividir"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="%" />
+                android:text="%"
+                android:onClick="onClick"/>
         </LinearLayout>
 
 
@@ -74,21 +79,24 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="7" />
+                android:text="7"
+                android:onClick="onClick"/>
 
             <Button
                 android:id="@+id/btn_ocho"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="8" />
+                android:text="8"
+                android:onClick="onClick"/>
 
             <Button
                 android:id="@+id/btn_nueve"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="9" />
+                android:text="9"
+                android:onClick="onClick"/>
         </LinearLayout>
 
         <LinearLayout
@@ -101,21 +109,24 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="4" />
+                android:text="4"
+                android:onClick="onClick"/>
 
             <Button
                 android:id="@+id/btn_cinco"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="5" />
+                android:text="5"
+                android:onClick="onClick"/>
 
             <Button
                 android:id="@+id/btn_seis"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="6" />
+                android:text="6"
+                android:onClick="onClick"/>
         </LinearLayout>
 
         <LinearLayout
@@ -128,21 +139,24 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="1" />
+                android:text="1"
+                android:onClick="onClick"/>
 
             <Button
                 android:id="@+id/btn_dos"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="2" />
+                android:text="2"
+                android:onClick="onClick"/>
 
             <Button
                 android:id="@+id/btn_tres"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="3" />
+                android:text="3"
+                android:onClick="onClick"/>
         </LinearLayout>
 
 
@@ -152,11 +166,12 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_clear"
+                android:id="@+id/btn_reset"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="C" />
+                android:text="C"
+                android:onClick="onClick"/>
 
 
             <Button
@@ -164,14 +179,16 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="0" />
+                android:text="0"
+                android:onClick="onClick"/>
 
             <Button
                 android:id="@+id/btn_igual"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="=" />
+                android:text="="
+                android:onClick="onClick"/>
         </LinearLayout>
 
     </LinearLayout>
